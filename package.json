@@ -1,0 +1,26 @@
+{
+  "name": "assessment_provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^5.2.10",
+    "amazon-location-helpers": "^1.1.1",
+    "amplify": "^0.0.11",
+    "aws-amplify": "^4.3.31",
+    "aws-sdk": "^2.1198.0",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5",
+    "maplibre-gl": "^2.3.0",
+    "maplibre-gl-js-amplify": "^2.0.4",
+    "mysql": "^2.18.1",
+    "node-fetch": "^3.2.10",
+    "request": "^2.88.2"
+  }
+}

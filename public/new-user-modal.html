@@ -1,0 +1,50 @@
+<div class="modal fade" id="newUserModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h3 class="modal-title text-light">Sign Up</h3>
+                <button type="button" class="close bg-light" data-dismiss="modal" onClick="clearActive()">
+                    <span>&times;</span>
+                </button>
+            </div>
+            <div class="modal-body px-5" id = "userSignUp">
+                <!-- All input to be sent to server, and buttons must be within the 'form' tag -->
+                <form class="row">
+                    <div class="profile-pic-div">
+                        <img src="images/nactus.png" id="photo">
+                    </div>
+                    <div class="card col-lg-6 signSection">
+                        <label for="username"><b>Username</b></label>
+                        <input type="text" placeholder="Username" name="username" id="username" required>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="rptPassword"
+                            required>
+                        <label for="mobileNumber"><b>Mobile Number</b></label>
+                        <input type="text" placeholder="Mobile Number" name="mobileNumber" id="mobile" required>
+                    </div>
+                    <div class="card col-lg-6 signSection">
+                        <label for="firstName"><b>First Name</b></label>
+                        <input type="text" placeholder="First Name" name="firstName" id="firstName" required>
+                        <label for="lastName"><b>Last Name</b></label>
+                        <input type="text" placeholder="Last Name" name="lastName" id="lastName" required>
+                        <label for="gender"><b>Gender</b></label>
+                        <input type="text" placeholder="Gender" name="gender" id="gender" required>
+                        <label for="address"><b>Address</b></label>
+                        <input type="text" placeholder="Address" name="address" id="address" required>
+                        <label for= "dateOfBirth"><b>Date of Birth</b></label>
+                        <input type="date" placeholder="Date of Birth" name="dateOfBirth" id="date" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="signupbtn"
+                            onClick="validatePassword()">Sign Up</button>
+                        <button type="button"  data-dismiss="modal" onClick="clearActive()">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

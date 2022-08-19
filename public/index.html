@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Study Material Website</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css>
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body onload="displayQuote()">
+    <!-- Include top navigation here -->
+    <div w3-include-html="top-navigation.html"></div>
+    <!-- This is the container that holds the initial message, heading, and Assignment -->
+    <div id="homeDisplay">
+        <div id="quoteDisplay" class="container">
+            <div>
+                <h2>STUDY WITH EASE</h2>
+            </div>
+            <img src="images\book.png" class="homePic">
+        </div>
+    </div>
+    <div class="container">
+        <!-- The message will be shown when the page loads and will
+        disappear after the assignments are loaded -->
+        <div class="row" id="parent">
+        </div>
+        <div id="contentFilter"></div>
+        <p>
+            <!-- This is the heading showing how many Assignment are there -->
+        <h5 id="summary" style="color:#5D5C61"></h5>
+        </p>
+        <!-- Displays thumbnails of the Assignment here -->
+        <div id="assessmentTable" class="row"></div>
+        <div id="noteTable" class="row"></div>
+        <div id="videoTable" class="row"></div>
+        <div id="aboutPage"></div>
+        <div id="signUpPage"></div>
+        <div id="loginPage"></div>
+        <div id="viewAccountPage"></div>
+    </div>
+    <div class="container" id="briefIntro">
+        <div class=row>
+            <div class="card col-md-6" id="describeReview1">
+                <img src="images/home1.png" style="width: 200px;height: 200px;" class="center">
+                <div class="quote center">Search for the subjects or topics that you want to study for.</div>
+            </div>
+            <div class="card col-md-6" id="describeReview2">
+                <img src="images/home2.png" style="width: 200px;height: 200px;" class="center">
+                <div class="quote center">Find out where's our nearest Nactus branch.</div>
+            </div>
+            <div class="card col-md-6" id="describeReview3">
+                <img src="images/home3.png" style="width: 200px;height: 200px;" class="center">
+                <div class="quote center">Gain access to study materials that is only available to the students of our
+                    tuition center</div>
+            </div>
+            <div class="card col-md-6" id="describeReview4">
+                <img src="images/home4.png" style="width: 200px;height: 200px;" class="center">
+                <div class="quote center">Find out more on topics that you do not understand and subjects you are weak
+                    in.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Include the Assignment modal here -->
+    <div w3-include-html="assignment-modal.html"></div>
+    <!-- Include the comments modal here -->
+    <div w3-include-html="comments-modal.html"></div>
+    <!-- Include the new comments modal here -->
+    <div w3-include-html="new-comments-modal.html"></div>
+    <!-- Include the edit comments modal here -->
+    <div w3-include-html="edit-comments-modal.html"></div>
+    <!-- Include the new user modal here -->
+    <div w3-include-html="new-user-modal.html"></div>
+    <!-- Include the login user modal here -->
+    <div w3-include-html="user-login-modal.html"></div>
+    <!-- Include the message modal here -->
+    <div w3-include-html="message-modal.html"></div>
+    <div class="center container", id="services">
+        <div class="card" id="weather">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="Search">
+                <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                        height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+                        </path>
+                    </svg></button>
+            </div>
+            <div class="weather loading">
+                <h2 class="city">Weather in Vancouver</h2>
+                <h1 class="temp">21°C</h1>
+                <div class="flex">
+                    <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+                    <div class="description">Cloudy</div>
+                </div>
+                <div class="humidity">Humidity: 60%</div>
+                <div class="wind">Wind speed: 6.2 km/h</div>
+            </div>
+        </div>
+        <div id="translate" class="center">
+            <input type="text" id="translateText" style="border-radius: 2cm;" />
+            <input type="button" id="btnCopy" value="Translate" onclick="translateMe()" />
+            <hr />
+            <label id="lblName"></label>
+            <p id="translatedValue"></p>
+        </div>
+    </div>
+    <br><br>
+    <!-- Include the footer here -->
+    <div id="footer" w3-include-html="footer.html"></div>
+</body>
+
+<!--must be inside-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+    //to bring in other HTML on the fly into this page
+    w3.includeHTML();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/86ec7c1143.js"></script>
+<script src="js/app.js"></script>
+<script src="js/comments.js"></script>
+<script src="js/assessment.js"></script>
+<script src="js/note.js"></script>
+<script src="js/video.js"></script>
+<script src="js/speech.js"></script>
+<script async src=""></script>
+
+
+</html>

@@ -1,0 +1,394 @@
+nav{
+  background: #5CDB95;
+  color:#5CDB95;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link{
+  color:#05386B;
+  font-size: 22px;
+  margin-right:5px;
+  font-family: 'Titillium Web';
+}
+
+.active .nav-link{
+  color:#EDF5E1;
+}
+
+.navbar-toggler{
+  color: #05386B;
+}
+
+.nav-item{
+  margin-left: 20px;
+}
+
+body{
+  background:#5CDB95;
+}
+
+footer{
+    background: #379683;
+    color: white;
+}
+
+.edit{
+    float: right;
+    padding-right: 10px;
+}
+
+.video{
+  width: 300px;
+  height:200px;
+}
+
+#map-canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#footer{
+  margin-bottom: 0;
+}
+
+.assessment-photo{
+  float:left;
+  padding: 10px;
+  height: 165px;
+  width: 120px;
+}
+
+.note-photo{
+  float:left;
+  padding: 10px;
+  height: 250px;
+  width: 170px;
+}
+
+.col-sm-6{
+  background: #dddddd;
+  margin-bottom: 5px;
+}
+
+.col-md-6{
+  background: #5CDB95;
+  border:0cm;
+}
+
+.card-title{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#overallRating{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+#location{
+  font-size: 90%;
+}
+
+#cuisine{
+  font-size: 90%;
+}
+
+.star, .editstar{
+  width:30px;
+  height :30px;
+}
+
+#describeReview1{
+  font-size: large;  
+  text-align: center;
+  margin-top: 20px;
+}
+
+#describeReview2{
+  font-size: large;  
+  text-align: center;
+  margin-top: 20px;
+}
+
+#describeReview3{
+  font-size: large;  
+  text-align: center;
+  margin-top: 20px;
+}
+
+#describeReview4{
+  font-size: large;  
+  text-align: center;
+  margin-top: 20px;
+}
+
+#my-map {
+  width: 500px;
+  height: 400px;
+  margin: 1em auto;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#translate{
+  float: right;
+  
+}
+
+#translatedValue{
+  font-size: medium;
+}
+
+.col-lg-12{
+  background: #5CDB95;
+  border: 0cm;
+  padding-left: 0em;
+  margin-left: 150px;
+}
+
+#founder{
+  float:left;
+  margin-right: 30px;
+}
+
+#websiteDescription{
+  max-width: 800px;
+  text-justify: auto;
+}
+
+#quoteDisplay{
+  width:100%;
+  height:auto;
+  padding:1%;
+  display: flex;
+}
+
+#services{
+  width:100%;
+  height:auto;
+  padding:1%;
+  display: flex;
+}
+
+#quoteDisplay h2{
+  text-align: left;
+  width: 50%;
+  color: #edf5e1;
+  font-size: 120px;
+  font-family: 'Titillium Web';
+}
+
+#briefIntro{
+  margin-top: 50px;
+}
+
+.homePic{
+  float: right;
+}
+
+#locationName{
+  text-align: center;
+}
+
+/* needed to position the dropdown content */
+.dropdown{
+  position: relative;
+  display:inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content{
+  display:none;
+  position: absolute;
+  background-color: #05386B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a{
+  color: black;
+  padding:12px 16px;
+  text-decoration:none;
+  display:block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+form image{
+  height: 200px;
+}
+
+.profile-pic-div{
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left:50%;
+  
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+}
+
+#photo{
+  height:100%;
+  width: 100%;
+}
+
+.signSection{
+  background: #8ee4af;
+  border: 0;
+  margin-top: 200px;
+}
+
+#weather{
+  background:#05386B;
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  width: calc(100% - 100px);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 44px;
+  width: 44px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.signupbtn{
+  max-width: 300px;
+  margin-top: 70px;
+}
+
+#userLogin{
+  background-color: #5CDB95;
+}
+
+#map { 
+height: 1000px; 
+width: 800px;
+margin-top: 100px;
+}
+
+.square{
+  width: 200px;
+  height: 200px;
+}
+
+.loginInput{
+  margin-top:20px;
+}
+
+#loginEmail{
+  width:450px;
+}
+
+#loginPassword{
+  width:450px;
+}
+
+#newPassword{
+  width: 450px;
+}
+
+#confirmPassword{
+  width: 450px;
+}
+
+#checkName{
+  width:450px;
+}
+
+#checkEmail{
+  width:450px;
+}
+
+.accountView{
+  background-color: #5CDB95;
+  border:0px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 50px 10px;
+}
+
+.userData{
+  width: 300px;
+  background-color: white;
+  border:1px solid black;;
+}
+
+td{
+  margin-left: 30px;
+}
+
+#accountPic{
+  margin: 0;
+  float: left;
+  width: 300px;
+  height:400px;
+}
+
+.modal-body{
+  background-color: #8ee4af;
+}
+
+.commentsCard{
+  background-color: #dddddd;
+}
+
+.displayedRating{
+  width: 20px;
+  height: 20px;
+
+}
+
+.userComment{
+  font-size: 20px;
+}
+
+#resetPass{
+  color: black;
+}

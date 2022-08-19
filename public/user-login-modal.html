@@ -1,0 +1,36 @@
+<div class="modal fade" id="loginUserModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-center">
+                <h3 class="modal-title text-light">Login</h3>
+            </div>
+            <div class="modal-body px-5" id="userLogin">
+                <!-- All input to be sent to server, and buttons must be within the 'form' tag -->
+                <img src="images/nactus.png" class="center square">
+                <form class="row">
+                    <!--modal for user to confirm their account existance-->
+                    <div id = "updatePass"></div>
+                    <!--modal for user to change password-->
+                    <div id = "changePass"></div>
+                    <div class="loginSection" id = "loginModal">
+                        <div class="center loginInput">
+                            <label for="email"><b>Email</b></label>
+                            <input type="text" placeholder="Enter Email" name="email" id="loginEmail" required>
+                        </div>
+                        <div class="center loginInput">
+                            <label for="psw"><b>Password</b></label>
+                            <input type="password" placeholder="Enter Password" name="psw" id="loginPassword" required>
+                        </div>
+                        <div class ="center forgetPass">
+                            <a href="#" onClick="newPassPage()" id="resetPass">Forget password?</a>
+                        </div>
+                        <div class="center loginInput">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" id="loginbtn"
+                                onClick="displayQuote()">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
